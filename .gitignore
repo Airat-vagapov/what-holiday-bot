@@ -1,0 +1,43 @@
+# Игнорировать папку node_modules
+node_modules/
+
+# Игнорировать файлы окружения
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Игнорировать логи
+*.log
+logs/
+
+# Игнорировать папку для временных файлов
+tmp/
+
+# Игнорировать папку для сборки (если используется)
+dist/
+build/
+
+# Игнорировать файлы IDE
+.vscode/
+.idea/
+
+# Игнорировать файлы операционной системы
+.DS_Store
+Thumbs.db
+
+# Игнорировать файлы покрытия тестами
+coverage/
+
+# Игнорировать файлы npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Игнорировать файлы локальной разработки
+*.local
+
+# Игнорировать файлы зависимостей (если используется pnpm)
+.pnpm-store/

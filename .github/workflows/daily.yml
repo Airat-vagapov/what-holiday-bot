@@ -36,7 +36,7 @@ jobs:
       # Если кэш найден — значит уже отправляли сегодня, выходим
       - name: Skip (already sent today)
         if: steps.sentcache.outputs.cache-hit == 'true'
-        run: echo "Already sent today (MSK date: ${{ steps.msk.outputs.today }}). Skipping."
+        run: echo "Already sent today (MSK date ${{ steps.msk.outputs.today }}). Skipping."
 
       # Если кэша нет — отправляем
       - name: Send message + poll

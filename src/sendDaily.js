@@ -46,6 +46,6 @@ if (SEND_POLL) {
 
     await bot.sendPoll(CHAT_ID, "Что отмечаем сегодня?", options, {
         is_anonymous: false,
-        allows_multiple_answers: true,
+        allows_multiple_answers: false,
     });
 }
